@@ -1,0 +1,14 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "A collection of boilerplate for JS development",
+  "main": "xml_debug.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "boilerplate"
+  ],
+  "author": "Steven Kalt",
+  "license": "MIT"
+}
