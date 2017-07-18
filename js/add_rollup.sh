@@ -1,6 +1,5 @@
 #! /usr/bin/env bash
 # https://code.lengstorf.com/learn-rollup-js/
-program_name=$0
 
 function usage {
     cat <<EOM
