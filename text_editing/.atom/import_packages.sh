@@ -1,0 +1,1 @@
+apm install linter-ui-default Hydrogen atom-beautify css-declaration-sorter autocomplete-python MagicPython python-tools intentions linter-eslint code-peek linter-stylelint linter-flake8 busy-signal docblockr color-picker sort-lines linter
