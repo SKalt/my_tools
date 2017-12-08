@@ -85,7 +85,7 @@ if ! [ -a ".babelrc.json" ] ; then
 {
   "presets": [
     [
-      "es2015",
+      "env",
       {
         "modules": false
       }
