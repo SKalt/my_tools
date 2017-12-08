@@ -32,7 +32,8 @@ fi
 npm install --save-dev            \
     rollup                        \
     rollup-plugin-babel           \
-    babel-preset-es2015           \
+    @babel/preset-env             \
+    @babel/core
     babel-plugin-external-helpers \
     rollup-plugin-eslint          \
     rollup-plugin-node-resolve    \
