@@ -3,11 +3,9 @@ env:
   commonjs: true
   es6: true
   node: true
-extends: 'eslint:recommended'
+extends: 'google'
 parserOptions:
-  ecmaFeatures:
-    experimentalObjectRestSpread: true
-    jsx: true
+  ecmaVersion: 9
   sourceType: module
 rules:
   indent:
@@ -22,3 +20,8 @@ rules:
   semi:
     - error
     - always
+  padding-line-between-statements:
+    - error
+    - blankLine: always
+      prev: block-like
+      next: block-like
