@@ -1,0 +1,4 @@
+#!/bin/bash
+# from https://stackoverflow.com/a/41872395/6571327
+# must be on your $PATH, executable, and is best piped through head -10 
+git reflog | sed -n 's/.*checkout: moving from .* to \(.*\)/\1/p' | awk '!x[$0]++'
