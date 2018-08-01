@@ -1,0 +1,4 @@
+[alias]
+  git = !git
+  fb = branch --list
+	root = rev-parse --show-toplevel
