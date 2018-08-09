@@ -1,4 +1,4 @@
 [alias]
   git = !git
-  fb = branch --list
-	root = rev-parse --show-toplevel
+  fb = !git branch --list "*$1*"
+  root = rev-parse --show-toplevel
