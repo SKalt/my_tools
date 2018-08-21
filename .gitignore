@@ -1,0 +1,5 @@
+# python linting
+.pyre
+
+# js
+node_modules
