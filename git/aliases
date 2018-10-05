@@ -1,4 +1,5 @@
 [alias]
+  clone-into = "!f() { git clone $1 && cd $( basename $1 .git); }; f"
   git = !git
   fb = !git branch --list "*$1*"
   root = rev-parse --show-toplevel
