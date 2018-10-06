@@ -1,5 +1,5 @@
 ./configure --with-python=yes     \
-	    --with-sp  atialite \
+	    --with-spatialite \
 	    --with-pg="/usr/bin/pg_config"         \
 	    --with-geotiff=internal \
 	    --with-libtiff=internal    \
