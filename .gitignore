@@ -1,5 +1,8 @@
 # python linting
 .pyre
+# python testing
+.pytest_cache/
 
 # js
 node_modules
+.cache
