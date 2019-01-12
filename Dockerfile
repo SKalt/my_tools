@@ -6,6 +6,7 @@ RUN apt-get update \
   && apt-get install -y \
     build-essential \
     curl \
+    default-jdk \
     emacs \
     git \
     gcc \
@@ -29,15 +30,15 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | sh \
 # install anaconda @ python 3.7
 # TODO: join these commands
 ENV bootstrap_conda=". /opt/conda/etc/profile.d/conda.sh"
-
+ENV PATH=/opt/conda/bin:$PATH
 RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh -O ~/anaconda.sh \
   && /bin/bash ~/anaconda.sh -b -p /opt/conda \
   && rm ~/anaconda.sh \
   && ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh \
   && echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc \
-  && echo "conda activate base" >> ~/.bashrc
-RUN $bootstrap_conda && conda activate base
-ENV PATH=/opt/conda/bin:$PATH
+  && echo "conda activate base" >> ~/.bashrc \
+  && $bootstrap_conda && conda activate base
+
 RUN pip install black yapf pycodestyle pydocstyle mypy
 
 # possible: install neo4j, postgres, python language server? other languages?
