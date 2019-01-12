@@ -1,0 +1,37 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "109082be-7462-4a3e-bca7-74c7e9673071"
+  core:
+    debugLSP: true
+    disabledPackages: [
+      "linter"
+      "python-tools"
+      "markdown-preview"
+      "atom-ide-debugger-python"
+      "autocomplete-ruby"
+      "linter-ruby"
+      "atom-python-docblock"
+      "MagicPython"
+      "linter-mypy"
+    ]
+    telemetryConsent: "limited"
+  "docblock-python":
+    style: "google"
+  editor:
+    fontSize: 19
+  "exception-reporting":
+    userId: "9dbc6870-43ce-4a13-9b36-ee21bb03ad1d"
+  "linter-mypy":
+    followImports: "normal"
+    mypyPath: "$PROJECT_PATH"
+  "linter-ui-default":
+    panelHeight: 459
+  "markdown-preview-plus":
+    syntaxThemeName: "atom-dark-syntax"
+  "rst-preview-pandoc":
+    pandocOpts: "-fmarkdown_github -thtml --webtex"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false

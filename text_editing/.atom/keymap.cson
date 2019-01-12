@@ -1,0 +1,3 @@
+'atom-workspace':
+  'ctrl-i': 'docblock-python:generate_docblock'
+  'ctrl-alt-l': 'editor:log-cursor-scope'

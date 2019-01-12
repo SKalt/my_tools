@@ -6,3 +6,13 @@
 # js
 node_modules
 .cache
+
+# atom
+text_editing/.atom/blob-store
+text_editing/.atom/packages
+text_editing/.atom/storage
+text_editing/.atom/compile-cache
+text_editing/.atom/recovery
+text_editing/.atom/*.out
+text_editing/.atom/.apm
+text_editing/.atom/github.cson
