@@ -16,3 +16,4 @@ text_editing/.atom/recovery
 text_editing/.atom/*.out
 text_editing/.atom/.apm
 text_editing/.atom/github.cson
+text_editing/.atom/.*
