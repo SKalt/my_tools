@@ -1,38 +1,109 @@
 "*":
+  Hydrogen:
+    languageMappings: "{\"python\": \"magicpython\"}"
   "atom-beautify":
     general:
       _analyticsUserId: "109082be-7462-4a3e-bca7-74c7e9673071"
+  "autocomplete-plus":
+    enableAutoConfirmSingleSuggestion: false
+  "autocomplete-python":
+    useKite: false
   core:
     debugLSP: true
     disabledPackages: [
-      "linter"
       "python-tools"
       "markdown-preview"
-      "atom-ide-debugger-python"
-      "autocomplete-ruby"
+      "linter-ui-default"
+      "pigments"
+      "busy-signal"
+      "color-picker"
+      "intentions"
       "linter-ruby"
-      "atom-python-docblock"
-      "MagicPython"
+      "markdown-writer"
+      "project-manager"
+      "python-debugger"
+      "svn"
+      "tree-view-search-bar"
+      "language-vue-component"
+      "linter"
       "linter-mypy"
     ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
+    ]
+    packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
+  "data-atom":
+    openDetailsViewWhenOpeningMainResultsView: true
+    useQueryAtCursor: true
   "docblock-python":
     style: "google"
-  editor:
-    fontSize: 19
+  editor: {}
   "exception-reporting":
     userId: "9dbc6870-43ce-4a13-9b36-ee21bb03ad1d"
   "git-blame":
-    columnWidth: 457
-  "linter-mypy":
-    followImports: "normal"
-    mypyPath: "$PROJECT_PATH"
-  "linter-ui-default": {}
+    columnWidth: 282
   "markdown-preview-plus":
     syntaxThemeName: "atom-dark-syntax"
   "rst-preview-pandoc":
     pandocOpts: "-fmarkdown_github -thtml --webtex"
+  "git-diff":
+    showIconsInEditorGutter: true
+  "github":
+    viewChangesForCurrentFileDiffPaneSplitDirection: "right"
+  "ide-python":
+    pylsPlugins:
+      jedi_definition: {}
+      jedi_hover: {}
+      jedi_signature_help: {}
+      mccabe: {}
+      pycodestyle:
+        ignore: [
+          "D413"
+        ]
+        maxLineLength: 80
+      pydocstyle:
+        enabled: true
+  "ide-vue":
+    additionalGrammars: [
+      "HTML"
+    ]
+  "linter-eslint":
+    advanced:
+      localNodeModules: "./node_modules"
+    lintHtmlFiles: true
+    scopes: [
+      "source.js"
+      "source.jsx"
+      "source.js.jsx"
+      "source.babel"
+      "source.js-semantic"
+      "text.html.vue"
+      "text.html.basic"
+    ]
+  "linter-mypy":
+    followImports: "normal"
+    mypyPath: "$PROJECT_PATH"
+    warnReturnAny: false
+  "linter-proselint": {}
+  "linter-ui-default": {}
   "tree-view":
     hideVcsIgnoredFiles: true
+    panelHeight: 300
+  pigments:
+    markerType: "native-square-dot"
+  "svg-preview": {}
+  "symbol-gen": {}
   welcome:
     showOnStartup: false
+".html.text.vue":
+  editor:
+    showIndentGuide: true
