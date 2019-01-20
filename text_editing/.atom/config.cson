@@ -22,11 +22,12 @@
     fontSize: 19
   "exception-reporting":
     userId: "9dbc6870-43ce-4a13-9b36-ee21bb03ad1d"
+  "git-blame":
+    columnWidth: 457
   "linter-mypy":
     followImports: "normal"
     mypyPath: "$PROJECT_PATH"
-  "linter-ui-default":
-    panelHeight: 459
+  "linter-ui-default": {}
   "markdown-preview-plus":
     syntaxThemeName: "atom-dark-syntax"
   "rst-preview-pandoc":
