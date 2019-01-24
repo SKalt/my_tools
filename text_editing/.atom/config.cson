@@ -46,18 +46,15 @@
     useQueryAtCursor: true
   "docblock-python":
     style: "google"
-  editor: {}
+  editor:
+    fontSize: 13
   "exception-reporting":
     userId: "9dbc6870-43ce-4a13-9b36-ee21bb03ad1d"
   "git-blame":
     columnWidth: 282
-  "markdown-preview-plus":
-    syntaxThemeName: "atom-dark-syntax"
-  "rst-preview-pandoc":
-    pandocOpts: "-fmarkdown_github -thtml --webtex"
   "git-diff":
     showIconsInEditorGutter: true
-  "github":
+  github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "ide-python":
     pylsPlugins:
@@ -95,13 +92,17 @@
     warnReturnAny: false
   "linter-proselint": {}
   "linter-ui-default": {}
-  "tree-view":
-    hideVcsIgnoredFiles: true
-    panelHeight: 300
+  "markdown-preview-plus":
+    syntaxThemeName: "atom-dark-syntax"
   pigments:
     markerType: "native-square-dot"
+  "rst-preview-pandoc":
+    pandocOpts: "-fmarkdown_github -thtml --webtex"
   "svg-preview": {}
   "symbol-gen": {}
+  "tree-view":
+    alwaysOpenExisting: true
+    panelHeight: 300
   welcome:
     showOnStartup: false
 ".html.text.vue":
