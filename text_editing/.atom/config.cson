@@ -4,6 +4,7 @@
   "atom-beautify":
     general:
       _analyticsUserId: "109082be-7462-4a3e-bca7-74c7e9673071"
+  "autoclose-html": {}
   "autocomplete-plus":
     enableAutoConfirmSingleSuggestion: false
   "autocomplete-python":
@@ -27,6 +28,7 @@
       "language-vue-component"
       "linter"
       "linter-mypy"
+      "linter-flake8"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -57,18 +59,26 @@
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "ide-python":
+    pylsConfigurationSources: [
+      "flake8"
+    ]
     pylsPlugins:
+      autopep8:
+        enabled: false
       jedi_definition: {}
       jedi_hover: {}
       jedi_signature_help: {}
       mccabe: {}
       pycodestyle:
+        hangClosing: true
         ignore: [
           "D413"
         ]
-        maxLineLength: 80
-      pydocstyle:
+      pydocstyle: {}
+      yapf:
         enabled: true
+  "ide-ruby":
+    lintLevel: "1"
   "ide-vue":
     additionalGrammars: [
       "HTML"
