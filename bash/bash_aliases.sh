@@ -1,5 +1,5 @@
 # alias-like functions
-exists() {
+function exists() {
   if [ -e $1 ]; then
     echo "exists" && return 0;
   else
@@ -7,4 +7,13 @@ exists() {
   fi;
 }
 
-mcd() { mkdir -p $1 && cd $1; };
+function mcd() { mkdir -p $1 && cd $1; };
+
+function print-path() {
+  echo $PATH | awk -F ':' '
+  {
+    for(i = 1; i <= NF; i++) {
+      print $i;
+    }
+  }';
+}
