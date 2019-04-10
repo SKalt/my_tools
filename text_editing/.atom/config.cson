@@ -103,7 +103,14 @@
   "linter-proselint": {}
   "linter-ui-default": {}
   "markdown-preview-plus":
+    mathConfig:
+      enableLatexRenderingByDefault: true
+    syncConfig:
+      syncEditorOnPreviewScroll: true
+      syncPreviewOnChange: true
+      syncPreviewOnEditorScroll: true
     syntaxThemeName: "atom-dark-syntax"
+    useGitHubStyle: true
   pigments:
     markerType: "native-square-dot"
   "rst-preview-pandoc":
