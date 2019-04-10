@@ -119,6 +119,7 @@
   "symbol-gen": {}
   "tree-view":
     alwaysOpenExisting: true
+    hideVcsIgnoredFiles: true
     panelHeight: 300
   welcome:
     showOnStartup: false
