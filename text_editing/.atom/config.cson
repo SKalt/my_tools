@@ -4,6 +4,7 @@
   "atom-beautify":
     general:
       _analyticsUserId: "109082be-7462-4a3e-bca7-74c7e9673071"
+  "autoclose-html": {}
   "autocomplete-plus":
     enableAutoConfirmSingleSuggestion: false
   "autocomplete-python":
@@ -28,6 +29,7 @@
       "language-vue-component"
       "linter"
       "linter-mypy"
+      "linter-flake8"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -47,7 +49,8 @@
     useQueryAtCursor: true
   "docblock-python":
     style: "google"
-  editor: {}
+  editor:
+    fontSize: 13
   "exception-reporting":
     userId: "9dbc6870-43ce-4a13-9b36-ee21bb03ad1d"
   "git-blame":
@@ -57,6 +60,9 @@
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "ide-python":
+    pylsConfigurationSources: [
+      "flake8"
+    ]
     pylsPlugins:
       autopep8:
         enabled: false
@@ -100,8 +106,14 @@
     warnReturnAny: false
   "linter-proselint": {}
   "linter-ui-default": {}
-  "markdown-preview-plus":
+  "markdown-preview-plus":    mathConfig:
+      enableLatexRenderingByDefault: true
+    syncConfig:
+      syncEditorOnPreviewScroll: true
+      syncPreviewOnChange: true
+      syncPreviewOnEditorScroll: true
     syntaxThemeName: "atom-dark-syntax"
+    useGitHubStyle: true
   pigments:
     markerType: "native-square-dot"
   "prettier-atom":
