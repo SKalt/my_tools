@@ -9,6 +9,7 @@
   "autocomplete-python":
     useKite: false
   core:
+    closeDeletedFileTabs: true
     debugLSP: true
     disabledPackages: [
       "python-tools"
@@ -51,27 +52,31 @@
     userId: "9dbc6870-43ce-4a13-9b36-ee21bb03ad1d"
   "git-blame":
     columnWidth: 282
-  "markdown-preview-plus":
-    syntaxThemeName: "atom-dark-syntax"
-  "rst-preview-pandoc":
-    pandocOpts: "-fmarkdown_github -thtml --webtex"
   "git-diff":
     showIconsInEditorGutter: true
-  "github":
+  github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "ide-python":
     pylsPlugins:
-      jedi_definition: {}
+      autopep8:
+        enabled: false
+      jedi_definition:
+        follow_builtin_imports: true
+        follow_imports: true
       jedi_hover: {}
       jedi_signature_help: {}
       mccabe: {}
       pycodestyle:
+        hangClosing: true
         ignore: [
           "D413"
         ]
         maxLineLength: 80
-      pydocstyle:
+      pydocstyle: {}
+      yapf:
         enabled: true
+  "ide-typescript":
+    typeScriptServer: {}
   "ide-vue":
     additionalGrammars: [
       "HTML"
@@ -95,13 +100,24 @@
     warnReturnAny: false
   "linter-proselint": {}
   "linter-ui-default": {}
+  "markdown-preview-plus":
+    syntaxThemeName: "atom-dark-syntax"
+  pigments:
+    markerType: "native-square-dot"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    prettierEslintOptions:
+      prettierLast: true
+  "python-black":
+    lineLength: 80
+  "rst-preview-pandoc":
+    pandocOpts: "-fmarkdown_github -thtml --webtex"
+  "svg-preview": {}
+  "symbol-gen": {}
   "tree-view":
     hideVcsIgnoredFiles: true
     panelHeight: 300
-  pigments:
-    markerType: "native-square-dot"
-  "svg-preview": {}
-  "symbol-gen": {}
   welcome:
     showOnStartup: false
 ".html.text.vue":
