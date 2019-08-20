@@ -1,6 +1,9 @@
 "*":
   Hydrogen:
+    debug: true
+    kernelNotifications: true
     languageMappings: "{\"python\": \"magicpython\"}"
+    startupCode: "{\"Python 3\": \"import os; os.chdir('/Users/steven.kalt/programming/research/services/')\"}"
   "atom-beautify":
     general:
       _analyticsUserId: "109082be-7462-4a3e-bca7-74c7e9673071"
@@ -30,6 +33,9 @@
       "linter"
       "linter-mypy"
       "linter-flake8"
+      "MagicPython"
+      "ide-vue"
+      "TabNine"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -51,18 +57,20 @@
     style: "google"
   editor:
     fontSize: 13
+    preferredLineLength: 80
+    showInvisibles: true
   "exception-reporting":
     userId: "9dbc6870-43ce-4a13-9b36-ee21bb03ad1d"
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "git-blame":
-    columnWidth: 282
+    columnWidth: 377
   "git-diff":
     showIconsInEditorGutter: true
   github:
     viewChangesForCurrentFileDiffPaneSplitDirection: "right"
   "ide-python":
-    pylsConfigurationSources: [
-      "flake8"
-    ]
     pylsPlugins:
       autopep8:
         enabled: false
@@ -135,3 +143,9 @@
 ".html.text.vue":
   editor:
     showIndentGuide: true
+".python.source":
+  editor:
+    preferredLineLength: 80
+".python.text.traceback":
+  editor:
+    showIndentGuide: false
