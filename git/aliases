@@ -3,3 +3,4 @@
   git = !git
   fb = !git branch --list "*$1*"
   root = rev-parse --show-toplevel
+  branch-point = '!f() {  git diff "$@" $(git log --merges -n 1 --format=%H); }; f'
